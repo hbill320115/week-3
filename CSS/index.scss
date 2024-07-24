@@ -1,0 +1,165 @@
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.container-sm{
+    margin: 0 auto;
+    max-width: 636px;
+}
+.header{
+    ul{
+        gap: 64px;
+        a{
+            padding: 25px 0px;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+.banner{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .banner-text{
+        padding: 296px 0px;
+        a{
+            padding: 6px 12px;
+            &:hover{
+                background: yellow;
+                color: #000;
+            }
+        }
+    }
+}
+.slogan{
+    .col{
+        width: 25%;
+    }
+}
+.classic{
+    .col{
+        width: 33.3333%;
+    }
+}
+.teamwork{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h3{
+        padding:8px 0px ;
+    }
+    .col{
+        width: 50%;
+    }
+}
+.customer{
+    .col{
+        width: 25%;
+        .customer-card{
+            border:1px solid #DEE2E6;
+            box-shadow: 0px 2px 6px #00000029;
+            border-radius: 4px;
+        }
+        .customer-text{
+            padding: 0px 16px;
+        }
+        .date{
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+}
+.we{
+    .input-hight{
+        padding: 6px 0px;
+    }
+    .textarea-hight{
+        height: 136px;
+    }
+    .form-btn{
+        width: 416px;
+        height: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        &:hover{
+            background: yellow;
+            color: #000;
+        }
+    }
+}
+.footer{
+    a:hover{
+        color: yellow;
+    }
+    span{
+        font-size: 36px;
+        line-height: 1.5;
+        margin-right: 22px;
+    }
+    .end{
+        border-top:1px solid white;
+        a{
+            font-size: 14px;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width:1296px){
+    .container{
+        max-width: 720px;
+    }
+    .container-sm{
+        max-width: 576px;
+    }
+    .banner{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    }
+    .slogan{
+        .col{
+                width: 50%;
+        }
+    }
+    .classic{
+        .row{
+            justify-content: center;
+            .col{
+                width: 50.1%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .teamwork{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+        background-size: cover;
+        .col{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+    }
+    .customer{
+        .col{
+            width: 50%; 
+        }
+    }
+    .we{
+        p{
+            font-size: 16px;
+        }
+        .form-btn{
+            width: 336px;
+        }
+    }
+
+}
